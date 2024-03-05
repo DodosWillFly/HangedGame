@@ -11,6 +11,9 @@ paraula = random.choice(paraules)
 paraula_oculta = "_" * len(paraula)
 nIntents = 5
 lletras_encertades = set()
+#This function checks if a guessed letter is present in the chosen word.
+#It converts the letter to lowercase and checks if it exists in the word (ignoring case).
+#If the letter is correct, it’s added to the lletras_encertades set, and True is returned. Otherwise, False is returned.
 
 def ComprovarLletra(lletra, paraula):
     lletra = lletra.lower()
@@ -18,6 +21,10 @@ def ComprovarLletra(lletra, paraula):
         lletras_encertades.add(lletra)
         return True
     return False
+#This function constructs the partially revealed word based on correctly guessed letters.
+#It iterates through each letter in the original word.
+#If the letter is in lletras_encertades, it’s revealed. Otherwise, an underscore is displayed.
+#The result is returned as a string without extra spaces.
 
 def ComVaLaParaula(paraula, lletras_encertades):
     paraula_oculta = ""
