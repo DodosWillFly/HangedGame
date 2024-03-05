@@ -1,4 +1,5 @@
 import random
+#The variable paraules holds a list of words such as “cat,” “car,” “table,” “book,” and others. These words will likely be used later in the program.
 paraules = [
     "gat", "cotxe", "taula", "llibre", "ordinador", 
     "televisor", "casa", "arbre", "mar", "muntanya", 
