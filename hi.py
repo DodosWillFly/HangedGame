@@ -15,7 +15,7 @@ lletras_encertades = set()
 #It converts the letter to lowercase and checks if it exists in the word (ignoring case)
 #If the letter is correct, it’s added to the lletras_encertades set, and True is returned. Otherwise, False is returned
 
-# Check if the character is correct or not
+
 def ComprovarLletra(lletra, paraula):
     lletra = lletra.lower()
     if lletra in paraula.lower():
@@ -60,7 +60,8 @@ while nIntents > 0 and "_" in paraula_oculta:
             print("F")
             print(f"Tens {nIntents} intents restants.")
             print("SEGÜENT INTENT:")
-
+# In case we figure the correct word the program says that you won, else it says the number of trys
+# and what the correct word was
 if "_" not in paraula_oculta:
     print("Felicitats! Has encertat la paraula.")
 else:
