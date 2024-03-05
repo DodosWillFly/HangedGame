@@ -11,6 +11,7 @@ paraula_oculta = "_" * len(paraula)
 nIntents = 5
 lletras_encertades = set()
 
+# Check if the character is correct or not
 def ComprovarLletra(lletra, paraula):
     lletra = lletra.lower()
     if lletra in paraula.lower():
