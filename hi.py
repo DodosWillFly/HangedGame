@@ -15,6 +15,7 @@ lletras_encertades = set()
 #It converts the letter to lowercase and checks if it exists in the word (ignoring case).
 #If the letter is correct, it’s added to the lletras_encertades set, and True is returned. Otherwise, False is returned.
 
+# Check if the character is correct or not
 def ComprovarLletra(lletra, paraula):
     lletra = lletra.lower()
     if lletra in paraula.lower():
