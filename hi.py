@@ -27,7 +27,7 @@ def ComVaLaParaula(paraula, lletras_encertades):
         else:
             paraula_oculta += "_ "
     return paraula_oculta.strip()
-
+# The program types welcome to the game and how many characters the secret word has
 print("BEN VINGUT AL JOC DE L'AHORCADO O COM ES DIGUI:")
 print(f"LA PARAULA OCULTA CONTÉ {len(paraula)} paraules")
 print(ComVaLaParaula(paraula, lletras_encertades))
