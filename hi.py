@@ -21,8 +21,8 @@ def ComprovarLletra(lletra, paraula):
         lletras_encertades.add(lletra)
         return True
     return False
-#This function constructs the partially revealed word based on correctly guessed letters.
-#It iterates through each letter in the original word.
+#This function constructs the partially revealed word based on correctly guessed letters
+#It iterates through each letter in the original word
 #If the letter is in lletras_encertades, it’s revealed. Otherwise, an underscore is displayed.
 #The result is returned as a string without extra spaces
 
