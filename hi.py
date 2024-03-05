@@ -24,7 +24,7 @@ def ComprovarLletra(lletra, paraula):
 #This function constructs the partially revealed word based on correctly guessed letters.
 #It iterates through each letter in the original word.
 #If the letter is in lletras_encertades, it’s revealed. Otherwise, an underscore is displayed.
-#The result is returned as a string without extra spaces.
+#The result is returned as a string without extra spaces
 
 def ComVaLaParaula(paraula, lletras_encertades):
     paraula_oculta = ""
