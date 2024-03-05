@@ -6,6 +6,7 @@ paraules = [
     "sol", "pluja", "cel", "aire", "terra", 
     "pantalons", "camisa", "pantaló", "aventura", "emoció"
 ]
+# Initializating
 paraula = random.choice(paraules)
 paraula_oculta = "_" * len(paraula)
 nIntents = 5
