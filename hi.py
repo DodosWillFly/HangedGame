@@ -1,5 +1,5 @@
 import random
-#The variable paraules holds a list of words such as “cat,” “car,” “table,” “book,” and others. These words will likely be used later in the program.
+#The variable paraules holds a list of words. These words will likely be used later in the program.
 paraules = [
     "gat", "cotxe", "taula", "llibre", "ordinador", 
     "televisor", "casa", "arbre", "mar", "muntanya", 
@@ -11,9 +11,9 @@ paraula = random.choice(paraules)
 paraula_oculta = "_" * len(paraula)
 nIntents = 5
 lletras_encertades = set()
-#This function checks if a guessed letter is present in the chosen word.
-#It converts the letter to lowercase and checks if it exists in the word (ignoring case).
-#If the letter is correct, it’s added to the lletras_encertades set, and True is returned. Otherwise, False is returned.
+#This function checks if a guessed letter is present in the chosen word
+#It converts the letter to lowercase and checks if it exists in the word (ignoring case)
+#If the letter is correct, it’s added to the lletras_encertades set, and True is returned. Otherwise, False is returned
 
 # Check if the character is correct or not
 def ComprovarLletra(lletra, paraula):
@@ -22,10 +22,10 @@ def ComprovarLletra(lletra, paraula):
         lletras_encertades.add(lletra)
         return True
     return False
-#This function constructs the partially revealed word based on correctly guessed letters.
-#It iterates through each letter in the original word.
+#This function constructs the partially revealed word based on correctly guessed letters
+#It iterates through each letter in the original word
 #If the letter is in lletras_encertades, it’s revealed. Otherwise, an underscore is displayed.
-#The result is returned as a string without extra spaces.
+#The result is returned as a string without extra spaces
 
 def ComVaLaParaula(paraula, lletras_encertades):
     paraula_oculta = ""
